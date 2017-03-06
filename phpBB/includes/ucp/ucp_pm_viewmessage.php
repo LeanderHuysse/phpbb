@@ -279,7 +279,7 @@ function view_message($id, $mode, $folder_id, $msg_id, $folder, $message_row)
 		'msg_data',
 		'user_info',
 	);
-	extract($phpbb_dispatcher->trigger_event('core.ucp_pm_view_messsage', compact($vars)));
+	extract($phpbb_dispatcher->trigger_event('core.ucp_pm_view_message', compact($vars)));
 
 	$template->assign_vars($msg_data);
 
